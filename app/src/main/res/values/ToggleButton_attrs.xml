@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="ToggleButton">
+        <!--宽度和高度-->
+        <attr name="width" format="dimension"></attr>
+        <attr name="height" format="dimension"></attr>
+        <!--方向设置 1为水平 0为垂直 默认为1-->
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="1"></enum>
+            <enum name="vertical" value="0"></enum>
+        </attr>
+        <!--开关位置 1为左边 0为右边 默认为1-->
+        <attr name="position" format="enum">
+            <enum name="left" value="1"></enum>
+            <enum name="righ" value="0"></enum>
+        </attr>
+        <!--初始化开关位置 1在左边 0在右边 默认为1-->
+        <attr name="initPosition" format="enum">
+            <enum name="left" value="1"></enum>
+            <enum name="right" value="0"></enum>
+        </attr>
+        <!--样式设置 1为圆角 0为直角 默认为1-->
+        <attr name="style" format="enum">
+            <enum name="rounded" value="1"></enum>
+            <enum name="orthogonal" value="0"></enum>
+        </attr>
+
+        <!--背景颜色设置-->
+        <!--背景边框颜色 默认灰色-->
+        <attr name="bgBorderColor" format="color|reference"></attr>
+        <!--为On时的背景颜色 默认白色-->
+        <attr name="bgOnColor" format="color|reference"></attr>
+        <!--为Off时的背景颜色 默认与On相同-->
+        <attr name="bgOffColor" format="color|reference"></attr>
+
+        <!--滑块颜色设置-->
+        <!--滑块边框颜色 默认灰色-->
+        <attr name="toggleBorderColor" format="color|reference"></attr>
+        <!--为On时滑块颜色 默认白色-->
+        <attr name="toggleOnColor" format="color|reference"></attr>
+        <!--为Off时滑块颜色 默认与On相同-->
+        <attr name="toggleOffColor" format="color|reference"></attr>
+
+        <!--背景边框占空比-->
+        <attr name="bgBorderSpace" format="float"></attr>
+        <!--滑块边框占空比-->
+        <attr name="toggleBoderSpace" format="float"></attr>
 
     </declare-styleable>
 </resources>
